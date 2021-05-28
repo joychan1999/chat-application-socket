@@ -8,8 +8,14 @@
         "type": "git",
         "url": ""
     },
+    "scripts": {
+        "start": "node server.js"
+    },
     "dependencies": {
         "express": "^4.17.1",
         "socket.io": "^1.7.4"
+    },
+    "engines": {
+        "node": "14.x"
     }
 }

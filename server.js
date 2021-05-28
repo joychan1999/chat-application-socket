@@ -107,7 +107,8 @@ function sendSysteemMessage(socket, message) {
         message: message,
         type: 'info',
         date: date,
-        time: pad(date.getHours()) + ':' + pad(date.getMinutes())
+        time:''
+        // time: pad(date.getHours()) + ':' + pad(date.getMinutes())
     };
     socket.broadcast.emit('message', systemMessage);
 }
