@@ -45,7 +45,7 @@ io.on('connection', function (socket) {
     socket.on('disconnect', function () {
         
         // console.log(user.username + ' disconnected.');
-        sendSysteemMessage(socket, user.username + ' disconnected.');
+        sendSysteemMessage(socket, user.username + ' leave the chat room.');
         // socket.broadcast.emit('message', user.username + ' leave the chat room.');
 
 
