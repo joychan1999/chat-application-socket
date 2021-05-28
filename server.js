@@ -3,8 +3,9 @@ var app = express();
 
 app.use(express.static(__dirname + '/'));
 
-var server = app.listen(8000, function () {
-    console.log("Server running on port 8000..");
+const port = process.env.PORT || 3000;
+var server = app.listen(port, function () {
+    console.log("Server running on port 3000..");
 });
 
 var io = require('socket.io').listen(server);
